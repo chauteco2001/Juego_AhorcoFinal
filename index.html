@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <title>Juego del ahorcado</title>
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <canvas id="ahorcado" width="960px" height="450px">
+        Tu navegador no soporta Canvas.
+    </canvas>
+    <div id="intentos-faltantes">Intentos faltantes: 5</div>
+    <label for="categoria">Selecciona una categoría:</label>
+    <select id="categoria" onchange="cambiarCategoria()">
+        <option value="nombres">Nombres</option>
+        <option value="animales">Animales</option>
+        <option value="ciudades">Ciudades</option>
+    </select>
+    <button id="boton" type="reset" onclick="restartGame()">Volver a Jugar</button>
+<script src="js/app.js"></script>
+</body>
+</html>
